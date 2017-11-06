@@ -5,10 +5,15 @@
  */
 package pruebajava2;
 
-/**
- *
+/******************************************************************************
+ **Alejandro yavara Vargas
+ 
+ * Fecha:  Noviembre 06 de 2017
+ * Programa:Meses del año con letras y numeros
+ * Responsabilidad: Clase Principal
+ 
  * @author LAB01
- */
+ ****************************************************************************/
 public class PruebaJava2 {
 
     /**
