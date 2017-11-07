@@ -25,27 +25,25 @@ public class Contraseña
       int cont =0 ;
       int contra=0;
       int cont2=0;
-      while (cont<3 && cont2==0);
-      {
+      while (cont<3 && cont2==0)      
+      
          if (clave==contra)
          {
-            JOptionPane.showMessageDialog(null,"Bienvenido"); 
+            JOptionPane.showMessageDialog(null,"Bienvenido");
+            cont2++;
          }
         
          else
           {
           
 	contra=Integer.parseInt(JOptionPane.showInputDialog("Ingrese clave"));				
-       cont2++;
+       cont++;
        
        if(cont==3)
        {
-         Integer.parseInt(JOptionPane.showInputDialog("Cuenta bloqueda comuniquese con soporte"));  
+         JOptionPane.showMessageDialog(null,"Cuenta bloqueada comuniquese con soporte tecnico");
        }
-	      
- 
-      
-          
+	       
           
       }
       
@@ -54,4 +52,3 @@ public class Contraseña
                
         
     }
-}
