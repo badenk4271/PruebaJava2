@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package pruebajava2;
-import import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 /*******************************************************************************
  **Alejandro yavara Vargas
  
@@ -20,35 +21,37 @@ public class Contraseña
     public static void main(String[] args)
     {
       
-      int clave=0; 
-      int intentos =1 ;
-      int maximo=3;
+      int clave=212; 
+      int cont =0 ;
+      int contra=0;
+      int cont2=0;
+      while (cont<3 && cont2==0);
       {
-         
+         if (clave==contra)
+         {
+            JOptionPane.showMessageDialog(null,"Bienvenido"); 
+         }
         
-          while((clave!=1809)&&(intentos<maximo))
+         else
           {
- 
-	System.out.print("introduzca una clave: ");
-	
-					
-       if(intentos==3)
+          
+	contra=Integer.parseInt(JOptionPane.showInputDialog("Ingrese clave"));				
+       cont2++;
+       
+       if(cont==3)
        {
-       System.out.println("intente otra vez");
-	intentos=intentos-maximo;
-					}
+         Integer.parseInt(JOptionPane.showInputDialog("Cuenta bloqueda comuniquese con soporte"));  
+       }
+	      
  
-	
-                
+      
           
           
       }
       
           
-          {
-                  }   
-      
-      }          
+      }
+               
         
     }
 }
